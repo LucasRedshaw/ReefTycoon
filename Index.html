@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reef Tycoon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Reef Tycoon</h1>
+    </header>
+    <section class="game-info">
+        <div class="currency">
+            <span>Balance:</span>
+            <span id="balance">0</span>
+        </div>
+        <div class="tank-selection">
+    <label for="tank-select">Select Tank:</label>
+    <select id="tank-select">
+        <!-- Tank options will be added dynamically using JavaScript -->
+    </select>
+</div>
+    </section>
+    <main>
+        <section class="tank-display">
+            <div id="tank-grid">
+                <!-- Tank grid contents will be added dynamically using JavaScript -->
+            </div>
+            <img class="overlay-image">
+        </section>
+        <section class="game-controls">
+            <button id="viewInventoryButton">View Inventory</button>
+            <button id="buyEquipment">Buy Equipment</button>
+            <button id="buyLivestock">Buy Livestock</button>
+            <button id="sellFishCoral">Sell Fish & Coral</button>
+
+        <section class="inventory-view" style="display: none;">
+            <h2>Inventory</h2>
+            <div class="inventory-items">
+                <!-- Inventory items will be displayed here -->
+            </div>
+        </section>        
+        </section>
+        <section class="livestock-shop">
+            <div class="livestock-category" id="fish">
+                <h2>Fish</h2>
+                <div class="livestock-option">
+                    <span>Clownfish (50)</span>
+                    <button class="purchase-livestock" data-cost="50" data-name="Clownfish" data-type="Fish">Buy</button>
+                </div>
+                <div class="livestock-option">
+                    <span>Yellow Tang (100)</span>
+                    <button class="purchase-livestock" data-cost="100" data-name="Yellow Tang" data-type="Fish">Buy</button>
+                </div>
+            </div>
+            <div class="livestock-category" id="coral">
+                <h2>Coral</h2>
+                <div class="livestock-option">
+                    <span>Zoanthids (25)</span>
+                    <button class="purchase-livestock" data-cost="25" data-name="Zoanthids" data-type="Coral">Buy</button>
+                </div>
+                <div class="livestock-option">
+                    <span>Xenia (50)</span>
+                    <button class="purchase-livestock" data-cost="50" data-name="Xenia" data-type="Coral">Buy</button>
+                </div>
+            </div>
+        </section>
+        <section class="equipment-shop">
+            <div class="equipment-category" id="tanks">
+                <h2>Tanks</h2>
+                <div class="tank-option">
+                    <span>Nano Tank (100)</span>
+                    <button class="purchase-tank" data-cost="100" data-name="Nano">Buy</button>
+                </div>
+                <div class="tank-option">
+                    <span>Small Tank (500)</span>
+                    <button class="purchase-tank" data-cost="500" data-name="Small">Buy</button>
+                </div>
+                <div class="tank-option">
+                    <span>Medium Tank (1000)</span>
+                    <button class="purchase-tank" data-cost="1000" data-name="Medium">Buy</button>
+                </div>
+                <div class="tank-option">
+                    <span>Large Tank (2000)</span>
+                    <button class="purchase-tank" data-cost="2000" data-name="Large">Buy</button>
+                </div>
+                <div class="tank-option">
+                    <span>Monster Tank (5000)</span>
+                    <button class="purchase-tank" data-cost="5000" data-name="Monster">Buy</button>
+                </div>
+            </div>
+            <div class="equipment-category" id="skimmers">
+                <h2>Skimmers</h2>
+                <!-- Add skimmers here -->
+            </div>
+            <div class="equipment-category" id="lights">
+                <h2>Lights</h2>
+                <!-- Add lights here -->
+            </div>
+            <div class="equipment-category" id="heaters">
+                <h2>Heaters</h2>
+                <!-- Add heaters here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Reef Tycoon. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
